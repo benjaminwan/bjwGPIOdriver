@@ -35,14 +35,27 @@ linux下的测试程序请参考jni来编写，这里就不提供了。
 
 5、简便测试方法
 不想用应用程序测试的话，可以在adb shell或调试串口中使用如下命令控制，可能会有出错提示但不影响。
-点灯：
+Tiny/Mini6410点灯：
+LED1:echo GPK 4 0 > /dev/bjw-gpio
+LED2:echo GPK 5 0 > /dev/bjw-gpio
+LED3:echo GPK 6 0 > /dev/bjw-gpio
+LED4:echo GPK 7 0 > /dev/bjw-gpio
+
+Tiny/Mini6410灭灯：
+LED1:echo GPK 4 1 > /dev/bjw-gpio
+LED2:echo GPK 5 1 > /dev/bjw-gpio
+LED3:echo GPK 6 1 > /dev/bjw-gpio
+LED4:echo GPK 7 1 > /dev/bjw-gpio
+
+Tiny/Mini210点灯：
 LED1:echo GPJ2 0 0 > /dev/bjw-gpio
 LED2:echo GPJ2 1 0 > /dev/bjw-gpio
 LED3:echo GPJ2 2 0 > /dev/bjw-gpio
 LED4:echo GPJ2 3 0 > /dev/bjw-gpio
 
-灭灯：
+Tiny/Mini210灭灯：
 LED1:echo GPJ2 0 1 > /dev/bjw-gpio
 LED2:echo GPJ2 1 1 > /dev/bjw-gpio
 LED3:echo GPJ2 2 1 > /dev/bjw-gpio
 LED4:echo GPJ2 3 1 > /dev/bjw-gpio
+
