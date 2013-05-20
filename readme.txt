@@ -1,3 +1,5 @@
+更多详情请查看：http://www.arm9home.net/read.php?tid-27259.html
+
 1.驱动本身没啥好说的，采用platform driver写法，属于练手之作，简单易懂吧，如果内核相关函数缺失，请自己下载GPIOKernelPatch并打好补丁。
 1.1、驱动文件名bjwgpio.c，放到内核的drivers/gpio文件夹，支持的内核都使用这个驱动文件。
 1.2、然后修改drivers/gpio文件夹里的Kconfig，在endif前增加(如果你patch或覆盖了如上补丁，那么此步就自动做好了，请跳过)。
